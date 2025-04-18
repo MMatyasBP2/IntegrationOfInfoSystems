@@ -13,4 +13,4 @@ def query_history(phone):
     sock.close()
 
 if __name__ == "__main__":
-    query_history("123456789")
+    query_history("+36/70-258-0094")

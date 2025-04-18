@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  topup-app:
+    build: .
+    container_name: topup-system
+    environment:
+      MONGO_URI: "mongodb+srv://matyika123456:H4FdxLQcNMOQvoBT@transactiondb.fcusdo6.mongodb.net/"
+    ports:
+      - "5000:5000"
