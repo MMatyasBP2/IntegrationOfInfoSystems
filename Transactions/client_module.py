@@ -31,4 +31,4 @@ def run_client(name, phone_list):
             print(f"[{name}] Exception: {e}")
         finally:
             sock.close()
-            time.sleep(random.uniform(1, 3))
+            time.sleep(1)
