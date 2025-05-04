@@ -2,11 +2,14 @@ import socket
 import random
 import time
 
+HOST = '0.0.0.0'
+PORT = 5000
+
 def run_client(name, phone_list):
     while True:
         try:
             sock = socket.socket()
-            sock.connect(('localhost', 5000))
+            sock.connect((HOST, PORT))
             phone = random.choice(phone_list)
             action = random.choice(['TEST', 'TOPUP'])
 
