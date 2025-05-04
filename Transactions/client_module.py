@@ -1,9 +1,7 @@
 import socket
 import random
 import time
-
-HOST = '0.0.0.0'
-PORT = 5000
+from server_module import HOST, PORT
 
 def run_client(name, phone_list):
     while True:
